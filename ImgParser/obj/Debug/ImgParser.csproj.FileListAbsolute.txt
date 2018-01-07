@@ -1,0 +1,9 @@
+C:\Users\Rodion\Documents\Visual Studio 2017\Projects\ImgParser\ImgParser\bin\Debug\ImgParser.exe
+C:\Users\Rodion\Documents\Visual Studio 2017\Projects\ImgParser\ImgParser\bin\Debug\ImgParser.pdb
+C:\Users\Rodion\Documents\Visual Studio 2017\Projects\ImgParser\ImgParser\obj\Debug\ImgParser.csprojResolveAssemblyReference.cache
+C:\Users\Rodion\Documents\Visual Studio 2017\Projects\ImgParser\ImgParser\obj\Debug\ImgParser.Properties.Resources.resources
+C:\Users\Rodion\Documents\Visual Studio 2017\Projects\ImgParser\ImgParser\obj\Debug\ImgParser.csproj.GenerateResource.Cache
+C:\Users\Rodion\Documents\Visual Studio 2017\Projects\ImgParser\ImgParser\obj\Debug\ImgParser.csproj.CoreCompileInputs.cache
+C:\Users\Rodion\Documents\Visual Studio 2017\Projects\ImgParser\ImgParser\obj\Debug\ImgParser.exe
+C:\Users\Rodion\Documents\Visual Studio 2017\Projects\ImgParser\ImgParser\obj\Debug\ImgParser.pdb
+C:\Users\Rodion\Documents\Visual Studio 2017\Projects\ImgParser\ImgParser\obj\Debug\ImgParser.Main.resources
