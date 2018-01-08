@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,8 +24,8 @@ namespace ImgParser
             if (NativeMethods.AllocConsole())
             {
                 IntPtr stdHandle = NativeMethods.GetStdHandle(NativeMethods.STD_OUTPUT_HANDLE);
-            }
-            //*/
+            }//*/
+
             stoptask1button.Enabled = false;
             stoptask2button.Enabled = false;
             stoptask3button.Enabled = false;
@@ -117,6 +112,8 @@ namespace ImgParser
         public void StartQueue(string address, int depth, 
             CancellationTokenSource cts, TextBox tasktext, ProgressBar progress, Button stoptaskbutton)
         {
+            tasktext.Text = address;
+
             if (OpenPage(address) == null)
             {
                 Cancel(cts, tasktext, stoptaskbutton);
@@ -125,7 +122,6 @@ namespace ImgParser
                 return;
             }
 
-            tasktext.Text = address;
             Task.Factory.StartNew(() => {
                 progress.Minimum = 0;
                 progress.Maximum = 10000;
@@ -155,7 +151,7 @@ namespace ImgParser
                 if (t.d > depth)
                     break;
 
-                Console.WriteLine("_____________________" + t.d + "_____________________");
+                //Console.WriteLine("_____________________" + t.d + "_____________________");
 
                 string ans = OpenPage(t.link);
                 if (ans == null)
@@ -207,7 +203,7 @@ namespace ImgParser
 
                 string name = RemoveBannedSymbols(link, false);
 
-                Console.WriteLine(link);
+                //Console.WriteLine(link);
 
                 try { wcl.DownloadFile(link, path + name + ".jpg"); }
                 catch { }
